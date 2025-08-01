@@ -4,13 +4,5 @@
   "devCommand": "cd packages/ui-react && pnpm storybook",
   "installCommand": "pnpm install",
   "framework": null,
-  "outputDirectory": "packages/ui-react/storybook-static",
-  "ignoreCommand": "if [ \"$VERCEL_GIT_COMMIT_REF\" != \"main\" ]; then exit 1; fi",
-  "functions": {},
-  "builds": [
-    {
-      "src": "packages/ui-react/storybook-static/**",
-      "use": "@vercel/static"
-    }
-  ]
+  "outputDirectory": "packages/ui-react/storybook-static"
 }
