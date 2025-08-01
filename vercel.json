@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd packages/ui-react && pnpm build-storybook",
+  "buildCommand": "pnpm install && pnpm build && cd packages/ui-react && pnpm build-storybook",
   "devCommand": "cd packages/ui-react && pnpm storybook",
   "installCommand": "pnpm install",
   "framework": null,
