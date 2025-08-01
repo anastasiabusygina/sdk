@@ -1,8 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm install && pnpm build && cd packages/ui-react && pnpm build-storybook",
+  "buildCommand": "pnpm install && pnpm build:libs && cd packages/ui-react && pnpm build-storybook",
   "devCommand": "cd packages/ui-react && pnpm storybook",
   "installCommand": "pnpm install",
   "framework": null,
-  "outputDirectory": "packages/ui-react/storybook-static"
+  "outputDirectory": "packages/ui-react/storybook-static",
+  "ignoreCommand": "git diff --quiet HEAD^ HEAD ./documentation"
 }
