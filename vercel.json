@@ -1,8 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm install && pnpm -r --filter @betswirl/sdk-core --filter @betswirl/wagmi-provider run build && pnpm --filter @betswirl/ui-react run build-storybook",
+  "buildCommand": "cd packages/ui-react && pnpm build-storybook",
+  "devCommand": "cd packages/ui-react && pnpm storybook",
   "installCommand": "pnpm install",
   "framework": null,
-  "outputDirectory": "packages/ui-react/storybook-static",
-  "ignoreCommand": "exit 1"
+  "outputDirectory": "packages/ui-react/storybook-static"
 }
