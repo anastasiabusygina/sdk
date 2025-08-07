@@ -4,5 +4,8 @@
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "outputDirectory": ".next"
+  "outputDirectory": ".next",
+  "env": {
+    "NEXTRA_GIT_TIMESTAMP": "false"
+  }
 }
