@@ -1,11 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "pnpm build",
+  "buildCommand": "NEXTRA_DISABLE_GIT=true pnpm build",
   "devCommand": "pnpm dev",
   "installCommand": "pnpm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "env": {
-    "NEXTRA_GIT_TIMESTAMP": "false"
-  }
+  "outputDirectory": ".next"
 }
